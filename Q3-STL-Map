@@ -1,0 +1,44 @@
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <cctype>
+#include <string>
+
+std::string cleanText(const std::string input) {
+    std::string cleanedText;
+    for (char ch : input) {
+        if (std::isalnum(ch) || ch == '-') {
+            cleanedText += std::tolower(ch);
+        }
+    }
+    return cleanedText;
+}
+
+int main() {
+    std::string fileName;
+    std::cout << "Enter the file name: ";
+    std::cin >> fileName;
+
+    std::ifstream inputFile(fileName);
+    if (!inputFile) {
+        std::cout << "Error opening file" << std::endl;
+        return 1;
+    }
+
+    std::map<std::string, int> frequencyTable;
+    std::string word;
+
+    while (inputFile >> word) {
+        std::string cleanedWord = cleanText(word);
+        if (!cleanedWord.empty()) {
+            frequencyTable[cleanedWord]++;
+        }
+    }
+
+    std::cout << "Frequency Table:" << std::endl;
+    for (const auto& pair : frequencyTable) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
+
+    return 0;
+}
