@@ -4,3 +4,58 @@
 // ID(s): 20220087
 // Section: S24
 // Date: 6 Dec.
+
+#include <iostream>
+#include <cmath>
+#include <list>
+#include <vector>
+#include <cstring>
+using namespace std;
+
+template <typename T>
+class Alpha{
+public:
+    vector<T> Set;
+
+    void input(T& x){
+        int c=0;
+        for(int i=0;i<Set.size();i++){
+            if(x != Set[i])
+                c++;
+            else
+                continue;
+        }
+        if(c == Set.size()){
+            Set.push_back(x);
+        }
+        else
+            cout<<"Can't be added as its already included.";
+    }
+    int ReturnSize(){
+        return Set.size();
+    }
+    void removeItem(T& x){
+        auto rmv = find(Set.begin(), Set.end(), Set);
+        if (rmv != Set.end()) {
+            Set.erase(rmv);
+        }
+    }
+
+    void finding_item(T& y){
+        T item = y;
+        for(int i=0;i<Set.size();i++){
+            if (y == Set[i]){
+                cout<< "item :" <<y<<" was found in the set.";
+                break;
+            }
+            else
+                continue;
+        }
+    }
+};
+ int main(){
+
+
+
+     return 0;
+ }
