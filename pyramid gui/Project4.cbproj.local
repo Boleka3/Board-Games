@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/12/21 18:14:50.000.650,=C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Project4PCH1.h</Transaction>
+    <Transaction>2023/12/21 18:14:50.000.165,=C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>2023/12/21 18:15:15.000.765,C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Unit3.cpp=C:\Users\MSI\Desktop\pyramid gui\Unit3.cpp</Transaction>
+    <Transaction>2023/12/21 18:15:15.000.765,C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Unit3.h=C:\Users\MSI\Desktop\pyramid gui\Unit3.h</Transaction>
+    <Transaction>2023/12/21 18:15:15.000.765,C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Unit3.fmx=C:\Users\MSI\Desktop\pyramid gui\Unit3.fmx</Transaction>
+    <Transaction>2023/12/21 18:15:47.000.654,C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Project4.cbproj=C:\Users\MSI\Desktop\pyramid gui\Project4.cbproj</Transaction>
+    <Transaction>2023/12/21 18:15:47.000.643,C:\Users\MSI\Documents\Embarcadero\Studio\Projects\Project4PCH1.h=C:\Users\MSI\Desktop\pyramid gui\Project4PCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>
